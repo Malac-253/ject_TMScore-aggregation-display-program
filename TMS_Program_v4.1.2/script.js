@@ -629,7 +629,7 @@ var mainFunction = function(){
         //Wed Link
         var WEDLLink = ("(LINK - FR) *** REALLINK TO USE (for: "+threadlink+"-"+postslink+"): https://boards.4channel.org/"+threadlink+"/thread/"+postslink)
         console.log(WEDLLink)
-        addconvertInfoHelper("REALLINK",("http://boards.4channel.org/"+threadlink+"/thread/"+postslink))
+        addconvertInfoHelper("REALLINK",("https://boards.4channel.org/"+threadlink+"/thread/"+postslink))
         
         var NotConverter = ProcessType.localeCompare("Converter")
         

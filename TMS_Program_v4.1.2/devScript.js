@@ -204,7 +204,7 @@ var mainFunction = function(){
             
             //Getting values        
             d3.select("#CONbutton1").on("click",function(){
-                var hardLink = dateStart.value.replace('http://boards.4channel.org/','').split('/thread/');
+                var hardLink = dateStart.value.replace('https://boards.4channel.org/','').split('/thread/');
                 var BASELINK = "https://cors-anywhere.herokuapp.com/"
                 var REALLINK = "https://a.4cdn.org/"+hardLink[0]+"/thread/"+hardLink[1]+".json"
             //Promise Main
