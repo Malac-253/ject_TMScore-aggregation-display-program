@@ -635,7 +635,7 @@ var mainFunction = function(){
      
         //adds thread intel to top of page, an in console
         function addconvertInfo(ProcessType,threadlink,postslink,REALLINK) {
-        //('http://boards.4channel.org/','').split('/thread/');
+        //('https://boards.4channel.org/','').split('/thread/');
         //console.log("---------------------------------- call remove")
         d3.selectAll("#heading-banner *").remove() 
         
@@ -660,9 +660,9 @@ var mainFunction = function(){
         addconvertInfoHelper("JSONLINK",(REALLINK))
         
         //Wed Link
-        var WEDLLink = ("(LINK - FR) *** REALLINK TO USE (for: "+threadlink+"-"+postslink+"): http://boards.4channel.org/"+threadlink+"/thread/"+postslink)
+        var WEDLLink = ("(LINK - FR) *** REALLINK TO USE (for: "+threadlink+"-"+postslink+"): https://boards.4channel.org/"+threadlink+"/thread/"+postslink)
         console.log(WEDLLink)
-        addconvertInfoHelper("REALLINK",("http://boards.4channel.org/"+threadlink+"/thread/"+postslink))
+        addconvertInfoHelper("REALLINK",("https://boards.4channel.org/"+threadlink+"/thread/"+postslink))
         
         var NotConverter = ProcessType.localeCompare("Converter")
         

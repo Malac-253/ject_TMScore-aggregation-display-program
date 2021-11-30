@@ -198,7 +198,7 @@ var mainFunction = function(){
             
             //Getting values        
             d3.select("#CONbutton1").on("click",function(){
-                var hardLink = dateStart.value.replace('http://boards.4channel.org/','').split('/thread/');
+                var hardLink = dateStart.value.replace('https://boards.4channel.org/','').split('/thread/');
                 var BASELINK = "https://cors-anywhere.herokuapp.com/"
                 var REALLINK = "https://a.4cdn.org/"+hardLink[0]+"/thread/"+hardLink[1]+".json"
             //Promise Main
@@ -602,7 +602,7 @@ var mainFunction = function(){
         }
         //adds thread intel to top of page, an in console
         function addconvertInfo(ProcessType,threadlink,postslink,REALLINK) {
-        //('http://boards.4channel.org/','').split('/thread/');
+        //('https://boards.4channel.org/','').split('/thread/');
         //console.log("---------------------------------- call remove")
         d3.selectAll("#heading-banner *").remove() 
         
@@ -627,7 +627,7 @@ var mainFunction = function(){
         addconvertInfoHelper("JSONLINK",(REALLINK))
         
         //Wed Link
-        var WEDLLink = ("(LINK - FR) *** REALLINK TO USE (for: "+threadlink+"-"+postslink+"): http://boards.4channel.org/"+threadlink+"/thread/"+postslink)
+        var WEDLLink = ("(LINK - FR) *** REALLINK TO USE (for: "+threadlink+"-"+postslink+"): https://boards.4channel.org/"+threadlink+"/thread/"+postslink)
         console.log(WEDLLink)
         addconvertInfoHelper("REALLINK",("http://boards.4channel.org/"+threadlink+"/thread/"+postslink))
         
