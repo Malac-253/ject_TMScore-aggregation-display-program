@@ -473,6 +473,24 @@ var mainFunction = function(){
             d3.select("head").append("script").attr("src", "http://d3plus.org/js/d3.js")
             d3.select("head").append("script").attr("src", "http://d3plus.org/js/d3plus.js")
             
+            //Update 1
+            d3.select("head").append("script").attr("src", "https://cdn.jsdelivr.net/npm/d3plus-text@1")
+            d3.select("head").append("script").attr("src", "https://cdn.jsdelivr.net/npm/d3plus@2")
+            
+            //Update 2
+            d3.select("head").append("script").attr("src", "https://cdn.jsdelivr.net/npm/d3plus@2.0.0/build/d3plus.full.js")
+            d3.select("head").append("script").attr("src", "https://cdn.jsdelivr.net/npm/d3plus-text@1.0.2/build/d3plus-text.full.js")
+            
+            //new
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3.js")
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3.min.js")
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3plus.js")
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3.full.js")
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3.full.min.js")
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3plus.min.js")
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/topojson.js")
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/topojson.min.js")
+            
             
         }
         //adds link to java code in body, removes it from head
@@ -533,7 +551,7 @@ var mainFunction = function(){
             
             var theRAndOne = 0 + Math.floor(Math.random() * 6) 
             
-            newConfigHelperSetter("BackGr",0,10,5,configsNames)
+            newConfigHelperSetter("BackGr",0,10,3,configsNames)
             newConfigHelperSetter("SpeakRate",0,2.1,0.97,configsNames)
             newConfigHelperSetter("SpeakType",0,10,5,configsNames)
             newConfigHelperSetter("BackgroundMusicLevel",0,1,0,configsNames)
@@ -1518,6 +1536,7 @@ var mainFunction = function(){
                                 if((i == 0)&&(oldpData == null)){
                                     intropage(pData,i,VidConfigs)
                                     console.log("what the fuck")
+                                    console.log(i,oldpData)
                                 }else{
                                         if (occurrences(pData[i].com,"<a href") > 0){
                                             if (countInArraycom(repeatRejecttion, pData[i].com) >= occurrences(pData[i].com,"<a href")){
