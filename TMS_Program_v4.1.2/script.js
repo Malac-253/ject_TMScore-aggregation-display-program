@@ -1007,7 +1007,7 @@ var mainFunction = function(){
                 }
                 if(pData[i].no == nums){
                 pData[i].verimage = true
-                pData[i].verimageLINK = "http://is2.4chan.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext    
+                pData[i].verimageLINK = "http://i.4cdn.org.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext    
                 //console.log("http://is2.4chan.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext);   
                 }
            }

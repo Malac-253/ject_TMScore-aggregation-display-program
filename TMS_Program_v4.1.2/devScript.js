@@ -549,7 +549,7 @@ var mainFunction = function(){
                     d3.select("#P" + aData.idnum + aData.chp)
                     .append("p")
                     .append("img")
-                    .attr("src",function(aData){return ("http://is2.4chan.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                    .attr("src",function(aData){return ("http://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                     .attr("alt","test")
                     .attr("height",(aData.h)/sizefix)
                     .attr("width",(aData.w)/sizefix)  
@@ -559,7 +559,7 @@ var mainFunction = function(){
                     d3.select("#P" + aData.idnum + aData.chp)
                     .append("p")
                     .append("img")
-                    .attr("src",function(aData){return ("http://is2.4chan.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                    .attr("src",function(aData){return ("http://i.4cdn.org.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                     .attr("alt","test")
                     .attr("height",(aData.h)/sizefix)
                     .attr("width",(aData.w)/sizefix)  
@@ -569,7 +569,7 @@ var mainFunction = function(){
                     d3.select("#P" + aData.idnum + aData.chp)
                     .append("p")
                     .append("img")
-                    .attr("src",function(aData){return ("http://is2.4chan.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                    .attr("src",function(aData){return ("http://i.4cdn.org.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                     .attr("alt","test")
                     .attr("height",(aData.h)/sizefix)
                     .attr("width",(aData.w)/sizefix)  
@@ -583,7 +583,7 @@ var mainFunction = function(){
                     .attr("autoplay","")
                     .text("Your browser does not support the video tag.")
                     .append("source")
-                    .attr("src",function(aData){return ("http://is2.4chan.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                    .attr("src",function(aData){return ("http://i.4cdn.org.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                     .attr("type","video/webm")
                     
                 } 
@@ -613,7 +613,7 @@ var mainFunction = function(){
                                 .html(function(aData){return aData.com})
                                 //.append("p")
                                 //.append("video")
-                                //.attr("src",function(aData){return ("http://is2.4chan.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                                //.attr("src",function(aData){return ("http://i.4cdn.org.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                                 //.attr("height",function(aData){return (aData.h/4)})
                                 //.attr("width",function(aData){return (aData.w/4)})
                             //console.log(element.replies)
@@ -624,7 +624,7 @@ var mainFunction = function(){
                         if (!(element.filename == undefined)){ 
                             d3.select("#P"+element.idnum + element.chp)
                             .append("div")
-                            console.log("http://is2.4chan.org/"+ Pastlink +"/"+element.tim+element.ext)
+                            console.log("http://i.4cdn.org.org/"+ Pastlink +"/"+element.tim+element.ext)
                         
                         }
                     
@@ -1113,8 +1113,8 @@ var mainFunction = function(){
                 }
                 if(pData[i].no == nums){
                 pData[i].verimage = true
-                pData[i].verimageLINK = "http://is2.4chan.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext    
-                //console.log("http://is2.4chan.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext);   
+                pData[i].verimageLINK = "http://i.4cdn.org.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext    
+                //console.log("http://i.4cdn.org.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext);   
                 }
            }
         }
@@ -1160,7 +1160,7 @@ var mainFunction = function(){
                         .attr("autoplay","")
                         .text("Your browser does not support the video tag.")
                         .append("source")
-                        .attr("src",function(aData){return ("http://is2.4chan.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                        .attr("src",function(aData){return ("http://i.4cdn.org.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                         .attr("type","video/webm")
                     }
                 }
@@ -1171,7 +1171,7 @@ var mainFunction = function(){
         //Gets links for media
         function mediaGetter(aData,Datalink,Pastlink){
                 //console.log(aData)
-                var imageLink = "http://is2.4chan.org/"+ aData.Pastlink +"/"+aData.tim+aData.ext 
+                var imageLink = "http://i.4cdn.org.org/"+ aData.Pastlink +"/"+aData.tim+aData.ext 
                 aData.imageLink = imageLink 
         return imageLink
         }
@@ -1663,7 +1663,7 @@ var mainFunction = function(){
                             
                             d3.select("#configs_form_holder")
                             .append("img")
-                            .attr("src",function(aData){return ("http://is2.4chan.org/"+text[i].Pastlink +"/"+text[i].tim+text[i].ext)})
+                            .attr("src",function(aData){return ("http://i.4cdn.org.org/"+text[i].Pastlink +"/"+text[i].tim+text[i].ext)})
                             .attr("height",locHim)//(mainH * 0.0278)
                             .attr("width",locWim)//(mainW * 0.0026)
                             .attr("style","position: relative;top: -"+locYim +"px;left: "+  locXim +"px; z-index:9;")
@@ -1678,7 +1678,7 @@ var mainFunction = function(){
                             .attr("autoplay","")
                             .text("Your browser does not support the video tag.")
                             .append("source")
-                            .attr("src",function(aData){return ("http://is2.4chan.org/"+ text[i].Pastlink +"/"+text[i].tim+text[i].ext)})
+                            .attr("src",function(aData){return ("http://i.4cdn.org.org/"+ text[i].Pastlink +"/"+text[i].tim+text[i].ext)})
                             .attr("type","video/webm")
                             
                     
