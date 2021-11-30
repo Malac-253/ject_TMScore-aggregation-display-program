@@ -1025,13 +1025,9 @@ var mainFunction = function(){
             
             //new
             d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3.js")
-            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3.min.js")
-            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3plus.js")
             d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3.full.js")
-            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3.full.min.js")
-            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3plus.min.js")
             d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/topojson.js")
-            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/topojson.min.js")
+            d3.select("head").append("script").attr("src", "d3plus.v1.9.8/js/d3plus.js")
             
         }
     
