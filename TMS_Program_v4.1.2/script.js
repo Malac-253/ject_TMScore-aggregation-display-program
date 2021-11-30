@@ -512,14 +512,14 @@ var mainFunction = function(){
             
             
             pData.forEach(function(aData){
-                console.log("http://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)
+                console.log("https://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)
                 
                 if(aData.ext == ".jpg"){
                     
                     d3.select("#P" + aData.idnum + aData.chp)
                     .append("p")
                     .append("img")
-                    .attr("src",function(aData){return ("http://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                    .attr("src",function(aData){return ("https://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                     .attr("alt","test")
                     .attr("height",(aData.h)/sizefix)
                     .attr("width",(aData.w)/sizefix)  
@@ -529,7 +529,7 @@ var mainFunction = function(){
                     d3.select("#P" + aData.idnum + aData.chp)
                     .append("p")
                     .append("img")
-                    .attr("src",function(aData){return ("http://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                    .attr("src",function(aData){return ("https://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                     .attr("alt","test")
                     .attr("height",(aData.h)/sizefix)
                     .attr("width",(aData.w)/sizefix)  
@@ -539,7 +539,7 @@ var mainFunction = function(){
                     d3.select("#P" + aData.idnum + aData.chp)
                     .append("p")
                     .append("img")
-                    .attr("src",function(aData){return ("http://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                    .attr("src",function(aData){return ("https://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                     .attr("alt","test")
                     .attr("height",(aData.h)/sizefix)
                     .attr("width",(aData.w)/sizefix)  
@@ -553,7 +553,7 @@ var mainFunction = function(){
                     .attr("autoplay","")
                     .text("Your browser does not support the video tag.")
                     .append("source")
-                    .attr("src",function(aData){return ("http://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                    .attr("src",function(aData){return ("https://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                     .attr("type","video/webm")
                     
                 } 
@@ -581,7 +581,7 @@ var mainFunction = function(){
                                 .html(function(aData){return aData.com})
                                 //.append("p")
                                 //.append("video")
-                                //.attr("src",function(aData){return ("http://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                                //.attr("src",function(aData){return ("https://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                                 //.attr("height",function(aData){return (aData.h/4)})
                                 //.attr("width",function(aData){return (aData.w/4)})
                             //console.log(element.replies)
@@ -592,7 +592,7 @@ var mainFunction = function(){
                         if (!(element.filename == undefined)){ 
                             d3.select("#P"+element.idnum + element.chp)
                             .append("div")
-                            console.log("http://i.4cdn.org/"+ Pastlink +"/"+element.tim+element.ext)
+                            console.log("https://i.4cdn.org/"+ Pastlink +"/"+element.tim+element.ext)
                         
                         }
                     
@@ -901,8 +901,8 @@ var mainFunction = function(){
             
             d3.select("head").append("script").attr("src", "/js/jquery-1.2.6.min.js").attr("language","JavaScript").attr("type","text/javascript")
             
-            d3.select("head").append("script").attr("src","http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
-            d3.select("head").append("script").attr("src","http://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js")
+            d3.select("head").append("script").attr("src","https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+            d3.select("head").append("script").attr("src","https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js")
             
             
             d3.select("head").append("script").attr("src", "/js/jquery-ui-personalized-1.5.2.packed.js").attr("language","JavaScript").attr("type","text/javascript")
@@ -1007,8 +1007,8 @@ var mainFunction = function(){
                 }
                 if(pData[i].no == nums){
                 pData[i].verimage = true
-                pData[i].verimageLINK = "http://i.4cdn.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext    
-                //console.log("http://i.4cdn.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext);   
+                pData[i].verimageLINK = "https://i.4cdn.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext    
+                //console.log("https://i.4cdn.org/"+ pData[i].Pastlink +"/"+pData[i].tim+pData[i].ext);   
                 }
            }
         }    
@@ -1053,7 +1053,7 @@ var mainFunction = function(){
                         .attr("autoplay","")
                         .text("Your browser does not support the video tag.")
                         .append("source")
-                        .attr("src",function(aData){return ("http://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
+                        .attr("src",function(aData){return ("https://i.4cdn.org/"+ Pastlink +"/"+aData.tim+aData.ext)})
                         .attr("type","video/webm")
                     }
                 }
@@ -1063,7 +1063,7 @@ var mainFunction = function(){
         //Gets links for media
         function mediaGetter(aData,Datalink,Pastlink){
                 //console.log(aData)
-                var imageLink = "http://i.4cdn.org/"+ aData.Pastlink +"/"+aData.tim+aData.ext 
+                var imageLink = "https://i.4cdn.org/"+ aData.Pastlink +"/"+aData.tim+aData.ext 
                 aData.imageLink = imageLink 
         return imageLink
         }
@@ -1506,7 +1506,7 @@ var mainFunction = function(){
                             
                             d3.select("#configs_form_holder")
                             .append("img")
-                            .attr("src",function(aData){return ("http://i.4cdn.org/"+text[i].Pastlink +"/"+text[i].tim+text[i].ext)})
+                            .attr("src",function(aData){return ("https://i.4cdn.org/"+text[i].Pastlink +"/"+text[i].tim+text[i].ext)})
                             .attr("height",locHim)//(mainH * 0.0278)
                             .attr("width",locWim)//(mainW * 0.0026)
                             .attr("style","position: relative;top: -"+locYim +"px;left: "+  locXim +"px; z-index:9;")
@@ -1521,7 +1521,7 @@ var mainFunction = function(){
                             .attr("autoplay","")
                             .text("Your browser does not support the video tag.")
                             .append("source")
-                            .attr("src",function(aData){return ("http://i.4cdn.org/"+ text[i].Pastlink +"/"+text[i].tim+text[i].ext)})
+                            .attr("src",function(aData){return ("https://i.4cdn.org/"+ text[i].Pastlink +"/"+text[i].tim+text[i].ext)})
                             .attr("type","video/webm")
                             
                     
@@ -1546,15 +1546,15 @@ var mainFunction = function(){
                 //video Background Art used videoBackgroundArtPicker function ; For Backgrounds - https://loading.io/pattern/ 
                 function MaseLikePatternA_Background(VidConfigs,ider,adder){
                     //width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'">
-                    return '<svg '+ider+' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#222222;display:block;z-index:1;position:relative'+adder+'" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'"><defs><pattern id="pid-0.5065629926574429" x="0" y="0" width="128" height="128" patternUnits="userSpaceOnUse"><g transform="scale(0.5)"><defs><g id="pat-0.9833584770815218"><polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#a5a4a4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" -3,-2 16.5,15.5 31.5,0.5 63.5,32.5 48.5,47.5 31.5,32.5 -0.5,64.5 16.5,79.5 31.5,64.5 47.5,79.5 95.5,32.5 80.5,15.5 95.5,0.5 127.5,32.5 48.5,111.5 31.5,96.5 -0.5,128.5 16.5,143.5 31.5,127.5 63.5,160.5 80.5,143.5 63.5,128.5 159.5,32.5 144.5,15.5 159.5,0.5 175.5,16.5 192,0 208,16 224,0 256,32 240,48 224,32 207.501,48.501 223.5,64.5 207.5,80.5 176.5,47.5 144.5,80.5 159.5,96.5 175.5,80.5 191.5,96.5 159.5,128.5 127.5,96.5 95.5,127.5 111.5,143.5 127.5,127.5 175.5,176.5 159.5,192.5 127.5,160.5 111.5,176.5 95.5,160.5 63.5,192.5 31.5,160.5 16.5,175.5 31.999,191.483 0,224 16,240 32,225 64,256 80,240 64,224 79.667,208.333 95.5,192.5 111.5,207.5 95.5,224.5 111.5,239.5 127.5,256.5 143.5,240.5 127.5,224.5 143.5,208.5 175.5,240.5 191.5,224.5 175.5,208.5 207.5,176.5 224,160 208,144 191.998,160.998 175.5,144.5 207.5,112.5 240,80 256,96 223.5,128.5 256,160 239.5,176.5 256,192 240,208 224,192 207.5,208.5 223.5,224.5 207.5,240.5 223.5,256.5 240,240 259,259" stroke-dasharray="70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308"><animate attributeName="stroke-dashoffset" keyTimes="0;1" values="0;101.94279261997768" repeatCount="indefinite" dur="1.5151515151515151s"></animate></polyline></g></defs><use xlink:href="#pat-0.9833584770815218" x="0" y="0"></use><use xlink:href="#pat-0.9833584770815218" x="-256" y="0"></use><use xlink:href="#pat-0.9833584770815218" x="256" y="0"></use><use xlink:href="#pat-0.9833584770815218" x="0" y="-256"></use><use xlink:href="#pat-0.9833584770815218" x="0" y="256"></use></g></pattern></defs><rect x="0" y="0" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" fill="url(#pid-0.5065629926574429)"></rect></svg>'
+                    return '<svg '+ider+' xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" style="margin:auto;background:#222222;display:block;z-index:1;position:relative'+adder+'" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'"><defs><pattern id="pid-0.5065629926574429" x="0" y="0" width="128" height="128" patternUnits="userSpaceOnUse"><g transform="scale(0.5)"><defs><g id="pat-0.9833584770815218"><polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#a5a4a4" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" -3,-2 16.5,15.5 31.5,0.5 63.5,32.5 48.5,47.5 31.5,32.5 -0.5,64.5 16.5,79.5 31.5,64.5 47.5,79.5 95.5,32.5 80.5,15.5 95.5,0.5 127.5,32.5 48.5,111.5 31.5,96.5 -0.5,128.5 16.5,143.5 31.5,127.5 63.5,160.5 80.5,143.5 63.5,128.5 159.5,32.5 144.5,15.5 159.5,0.5 175.5,16.5 192,0 208,16 224,0 256,32 240,48 224,32 207.501,48.501 223.5,64.5 207.5,80.5 176.5,47.5 144.5,80.5 159.5,96.5 175.5,80.5 191.5,96.5 159.5,128.5 127.5,96.5 95.5,127.5 111.5,143.5 127.5,127.5 175.5,176.5 159.5,192.5 127.5,160.5 111.5,176.5 95.5,160.5 63.5,192.5 31.5,160.5 16.5,175.5 31.999,191.483 0,224 16,240 32,225 64,256 80,240 64,224 79.667,208.333 95.5,192.5 111.5,207.5 95.5,224.5 111.5,239.5 127.5,256.5 143.5,240.5 127.5,224.5 143.5,208.5 175.5,240.5 191.5,224.5 175.5,208.5 207.5,176.5 224,160 208,144 191.998,160.998 175.5,144.5 207.5,112.5 240,80 256,96 223.5,128.5 256,160 239.5,176.5 256,192 240,208 224,192 207.5,208.5 223.5,224.5 207.5,240.5 223.5,256.5 240,240 259,259" stroke-dasharray="70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308 70.3405269077846 31.60226571219308"><animate attributeName="stroke-dashoffset" keyTimes="0;1" values="0;101.94279261997768" repeatCount="indefinite" dur="1.5151515151515151s"></animate></polyline></g></defs><use xlink:href="#pat-0.9833584770815218" x="0" y="0"></use><use xlink:href="#pat-0.9833584770815218" x="-256" y="0"></use><use xlink:href="#pat-0.9833584770815218" x="256" y="0"></use><use xlink:href="#pat-0.9833584770815218" x="0" y="-256"></use><use xlink:href="#pat-0.9833584770815218" x="0" y="256"></use></g></pattern></defs><rect x="0" y="0" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" fill="url(#pid-0.5065629926574429)"></rect></svg>'
                 }
                 function MaseLikePatternB_Background(VidConfigs,ider,adder){
                     //width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'">
-                    return '<svg '+ider+' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#222222;display:block;z-index:1;position:relative'+adder+'" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'"><defs><pattern id="pid-0.8617823405425016" x="0" y="0" width="261.12" height="261.12" patternUnits="userSpaceOnUse"><g transform="scale(1.02)"><defs><g id="pat-0.9098463719290082"><polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#515151" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" -3,-2 16.5,15.5 31.5,0.5 63.5,32.5 48.5,47.5 31.5,32.5 -0.5,64.5 16.5,79.5 31.5,64.5 47.5,79.5 95.5,32.5 80.5,15.5 95.5,0.5 127.5,32.5 48.5,111.5 31.5,96.5 -0.5,128.5 16.5,143.5 31.5,127.5 63.5,160.5 80.5,143.5 63.5,128.5 159.5,32.5 144.5,15.5 159.5,0.5 175.5,16.5 192,0 208,16 224,0 256,32 240,48 224,32 207.501,48.501 223.5,64.5 207.5,80.5 176.5,47.5 144.5,80.5 159.5,96.5 175.5,80.5 191.5,96.5 159.5,128.5 127.5,96.5 95.5,127.5 111.5,143.5 127.5,127.5 175.5,176.5 159.5,192.5 127.5,160.5 111.5,176.5 95.5,160.5 63.5,192.5 31.5,160.5 16.5,175.5 31.999,191.483 0,224 16,240 32,225 64,256 80,240 64,224 79.667,208.333 95.5,192.5 111.5,207.5 95.5,224.5 111.5,239.5 127.5,256.5 143.5,240.5 127.5,224.5 143.5,208.5 175.5,240.5 191.5,224.5 175.5,208.5 207.5,176.5 224,160 208,144 191.998,160.998 175.5,144.5 207.5,112.5 240,80 256,96 223.5,128.5 256,160 239.5,176.5 256,192 240,208 224,192 207.5,208.5 223.5,224.5 207.5,240.5 223.5,256.5 240,240 259,259" stroke-dasharray="74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875"><animate attributeName="stroke-dashoffset" keyTimes="0;1" values="0;95.1466064453125" repeatCount="indefinite" dur="1.5151515151515151s"></animate></polyline></g></defs><use xlink:href="#pat-0.9098463719290082" x="0" y="0"></use><use xlink:href="#pat-0.9098463719290082" x="-256" y="0"></use><use xlink:href="#pat-0.9098463719290082" x="256" y="0"></use><use xlink:href="#pat-0.9098463719290082" x="0" y="-256"></use><use xlink:href="#pat-0.9098463719290082" x="0" y="256"></use></g></pattern></defs><rect x="0" y="0" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" fill="url(#pid-0.8617823405425016)"></rect></svg>'
+                    return '<svg '+ider+' xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" style="margin:auto;background:#222222;display:block;z-index:1;position:relative'+adder+'" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'"><defs><pattern id="pid-0.8617823405425016" x="0" y="0" width="261.12" height="261.12" patternUnits="userSpaceOnUse"><g transform="scale(1.02)"><defs><g id="pat-0.9098463719290082"><polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#515151" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" -3,-2 16.5,15.5 31.5,0.5 63.5,32.5 48.5,47.5 31.5,32.5 -0.5,64.5 16.5,79.5 31.5,64.5 47.5,79.5 95.5,32.5 80.5,15.5 95.5,0.5 127.5,32.5 48.5,111.5 31.5,96.5 -0.5,128.5 16.5,143.5 31.5,127.5 63.5,160.5 80.5,143.5 63.5,128.5 159.5,32.5 144.5,15.5 159.5,0.5 175.5,16.5 192,0 208,16 224,0 256,32 240,48 224,32 207.501,48.501 223.5,64.5 207.5,80.5 176.5,47.5 144.5,80.5 159.5,96.5 175.5,80.5 191.5,96.5 159.5,128.5 127.5,96.5 95.5,127.5 111.5,143.5 127.5,127.5 175.5,176.5 159.5,192.5 127.5,160.5 111.5,176.5 95.5,160.5 63.5,192.5 31.5,160.5 16.5,175.5 31.999,191.483 0,224 16,240 32,225 64,256 80,240 64,224 79.667,208.333 95.5,192.5 111.5,207.5 95.5,224.5 111.5,239.5 127.5,256.5 143.5,240.5 127.5,224.5 143.5,208.5 175.5,240.5 191.5,224.5 175.5,208.5 207.5,176.5 224,160 208,144 191.998,160.998 175.5,144.5 207.5,112.5 240,80 256,96 223.5,128.5 256,160 239.5,176.5 256,192 240,208 224,192 207.5,208.5 223.5,224.5 207.5,240.5 223.5,256.5 240,240 259,259" stroke-dasharray="74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875 74.21435302734375 20.93225341796875"><animate attributeName="stroke-dashoffset" keyTimes="0;1" values="0;95.1466064453125" repeatCount="indefinite" dur="1.5151515151515151s"></animate></polyline></g></defs><use xlink:href="#pat-0.9098463719290082" x="0" y="0"></use><use xlink:href="#pat-0.9098463719290082" x="-256" y="0"></use><use xlink:href="#pat-0.9098463719290082" x="256" y="0"></use><use xlink:href="#pat-0.9098463719290082" x="0" y="-256"></use><use xlink:href="#pat-0.9098463719290082" x="0" y="256"></use></g></pattern></defs><rect x="0" y="0" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" fill="url(#pid-0.8617823405425016)"></rect></svg>'
                 }
                 function MaseLikePatternC_Background(VidConfigs,ider,adder){
                     //width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'">
-                    return '<svg '+ider+' xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#222222;display:block;z-index:1;position:relative'+adder+'" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'"><defs> <pattern id="pid-0.7861150321209958" x="0" y="0" width="360.96000000000004" height="360.96000000000004" patternUnits="userSpaceOnUse"> <g transform="scale(1.4100000000000001)"><defs><g id="pat-0.2321887380297638"><polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#ffe200" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" -3,-2 16.5,15.5 31.5,0.5 63.5,32.5 48.5,47.5 31.5,32.5 -0.5,64.5 16.5,79.5 31.5,64.5 47.5,79.5 95.5,32.5 80.5,15.5 95.5,0.5 127.5,32.5 48.5,111.5 31.5,96.5 -0.5,128.5 16.5,143.5 31.5,127.5 63.5,160.5 80.5,143.5 63.5,128.5 159.5,32.5 144.5,15.5 159.5,0.5 175.5,16.5 192,0 208,16 224,0 256,32 240,48 224,32 207.501,48.501 223.5,64.5 207.5,80.5 176.5,47.5 144.5,80.5 159.5,96.5 175.5,80.5 191.5,96.5 159.5,128.5 127.5,96.5 95.5,127.5 111.5,143.5 127.5,127.5 175.5,176.5 159.5,192.5 127.5,160.5 111.5,176.5 95.5,160.5 63.5,192.5 31.5,160.5 16.5,175.5 31.999,191.483 0,224 16,240 32,225 64,256 80,240 64,224 79.667,208.333 95.5,192.5 111.5,207.5 95.5,224.5 111.5,239.5 127.5,256.5 143.5,240.5 127.5,224.5 143.5,208.5 175.5,240.5 191.5,224.5 175.5,208.5 207.5,176.5 224,160 208,144 191.998,160.998 175.5,144.5 207.5,112.5 240,80 256,96 223.5,128.5 256,160 239.5,176.5 256,192 240,208 224,192 207.5,208.5 223.5,224.5 207.5,240.5 223.5,256.5 240,240 259,259" stroke-dasharray="90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397"> <animate attributeName="stroke-dashoffset" keyTimes="0;1" values="0;259.49074485085225" repeatCount="indefinite" dur="20s"></animate> </polyline></g></defs><use xlink:href="#pat-0.2321887380297638" x="0" y="0"></use><use xlink:href="#pat-0.2321887380297638" x="-256" y="0"></use><use xlink:href="#pat-0.2321887380297638" x="256" y="0"></use><use xlink:href="#pat-0.2321887380297638" x="0" y="-256"></use><use xlink:href="#pat-0.2321887380297638" x="0" y="256"></use></g></pattern></defs><rect x="0" y="0" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" fill="url(#pid-0.7861150321209958)"></rect></svg>'    
+                    return '<svg '+ider+' xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" style="margin:auto;background:#222222;display:block;z-index:1;position:relative'+adder+'" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" preserveAspectRatio="xMidYMid" viewBox="0 0 -'+VidConfigs.SVGheight+' '+VidConfigs.SVGwidth+'"><defs> <pattern id="pid-0.7861150321209958" x="0" y="0" width="360.96000000000004" height="360.96000000000004" patternUnits="userSpaceOnUse"> <g transform="scale(1.4100000000000001)"><defs><g id="pat-0.2321887380297638"><polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#ffe200" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points=" -3,-2 16.5,15.5 31.5,0.5 63.5,32.5 48.5,47.5 31.5,32.5 -0.5,64.5 16.5,79.5 31.5,64.5 47.5,79.5 95.5,32.5 80.5,15.5 95.5,0.5 127.5,32.5 48.5,111.5 31.5,96.5 -0.5,128.5 16.5,143.5 31.5,127.5 63.5,160.5 80.5,143.5 63.5,128.5 159.5,32.5 144.5,15.5 159.5,0.5 175.5,16.5 192,0 208,16 224,0 256,32 240,48 224,32 207.501,48.501 223.5,64.5 207.5,80.5 176.5,47.5 144.5,80.5 159.5,96.5 175.5,80.5 191.5,96.5 159.5,128.5 127.5,96.5 95.5,127.5 111.5,143.5 127.5,127.5 175.5,176.5 159.5,192.5 127.5,160.5 111.5,176.5 95.5,160.5 63.5,192.5 31.5,160.5 16.5,175.5 31.999,191.483 0,224 16,240 32,225 64,256 80,240 64,224 79.667,208.333 95.5,192.5 111.5,207.5 95.5,224.5 111.5,239.5 127.5,256.5 143.5,240.5 127.5,224.5 143.5,208.5 175.5,240.5 191.5,224.5 175.5,208.5 207.5,176.5 224,160 208,144 191.998,160.998 175.5,144.5 207.5,112.5 240,80 256,96 223.5,128.5 256,160 239.5,176.5 256,192 240,208 224,192 207.5,208.5 223.5,224.5 207.5,240.5 223.5,256.5 240,240 259,259" stroke-dasharray="90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397 90.82176069779828 168.66898415305397"> <animate attributeName="stroke-dashoffset" keyTimes="0;1" values="0;259.49074485085225" repeatCount="indefinite" dur="20s"></animate> </polyline></g></defs><use xlink:href="#pat-0.2321887380297638" x="0" y="0"></use><use xlink:href="#pat-0.2321887380297638" x="-256" y="0"></use><use xlink:href="#pat-0.2321887380297638" x="256" y="0"></use><use xlink:href="#pat-0.2321887380297638" x="0" y="-256"></use><use xlink:href="#pat-0.2321887380297638" x="0" y="256"></use></g></pattern></defs><rect x="0" y="0" width="'+VidConfigs.SVGwidth+'" height="'+VidConfigs.SVGheight+'" fill="url(#pid-0.7861150321209958)"></rect></svg>'    
                 }
             
             //mains - massSpeakingtool managers
@@ -1783,7 +1783,7 @@ var mainFunction = function(){
                         d3.selectAll("body *").remove()
                         d3.select("body").append("p").text("promise_massSpeakingtoolv9 - THE BIG DONE")
                         d3.select("body").append("p").text("promise_massSpeakingtoolv9 - Result: " + result)
-                        d3.select("body").append("div").html('<svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg"><style>.small { font: italic 13px sans-serif; }.heavy { font: bold 30px sans-serif; }/* Note that the color of the text is set with the    ** fill property, the color property is for HTML only */.Rrrrr { font: italic 40px serif; fill: red; }</style><text x="20" y="35" class="small">The</text><text x="40" y="35" class="heavy">Big</text><text x="55" y="55" class="small">Done</text><text x="65" y="55" class="Rrrrr">MAlACHI!</text></svg>')
+                        d3.select("body").append("div").html('<svg viewBox="0 0 240 80" xmlns="https://www.w3.org/2000/svg"><style>.small { font: italic 13px sans-serif; }.heavy { font: bold 30px sans-serif; }/* Note that the color of the text is set with the    ** fill property, the color property is for HTML only */.Rrrrr { font: italic 40px serif; fill: red; }</style><text x="20" y="35" class="small">The</text><text x="40" y="35" class="heavy">Big</text><text x="55" y="55" class="small">Done</text><text x="65" y="55" class="Rrrrr">MAlACHI!</text></svg>')
                     })                       
                 })
             //THE REAL CODE
