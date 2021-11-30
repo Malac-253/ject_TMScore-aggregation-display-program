@@ -470,8 +470,8 @@ var mainFunction = function(){
             d3.select("head").append("script").attr("src", "/js/jquery-ui-personalized-1.5.2.packed.js").attr("language","JavaScript").attr("type","text/javascript")
             d3.select("head").append("script").attr("src", "/js/sprinkle.js").attr("language","JavaScript").attr("type","text/javascript")
             
-            d3.select("head").append("script").attr("src", "https://d3plus.org/js/d3.js")
-            d3.select("head").append("script").attr("src", "https://d3plus.org/js/d3plus.js")
+            d3.select("head").append("script").attr("src", "http://d3plus.org/js/d3.js")
+            d3.select("head").append("script").attr("src", "http://d3plus.org/js/d3plus.js")
             
             
         }
